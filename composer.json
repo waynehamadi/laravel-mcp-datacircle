@@ -1,0 +1,56 @@
+{
+  "name": "datacircle/laravel-mcp-tools",
+  "description": "Find the best GTM APIs. Four Laravel MCP tools call Datacircle's public API. You need no API key.",
+  "type": "library",
+  "license": "MIT",
+  "homepage": "https://datacircle.dev",
+  "keywords": [
+    "laravel",
+    "laravel-mcp",
+    "mcp",
+    "model-context-protocol",
+    "mcp-server",
+    "tools",
+    "api",
+    "gtm",
+    "datacircle"
+  ],
+  "authors": [
+    {
+      "name": "Wayne Hamadi",
+      "email": "wayne@datacircle.dev",
+      "homepage": "https://datacircle.dev"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/waynehamadi/laravel-mcp-datacircle/issues",
+    "source": "https://github.com/waynehamadi/laravel-mcp-datacircle",
+    "docs": "https://datacircle.dev/api"
+  },
+  "require": {
+    "php": "^8.2",
+    "ext-json": "*",
+    "laravel/mcp": "^1.0",
+    "illuminate/http": "^12.41.1|^13.0",
+    "illuminate/support": "^12.41.1|^13.0"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^10.8|^11.0",
+    "phpunit/phpunit": "^11.5|^12.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Datacircle\\LaravelMcp\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Datacircle\\LaravelMcp\\Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "test": "phpunit"
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true
+}
